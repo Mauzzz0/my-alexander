@@ -1,10 +1,3 @@
 console.log(1);
 console.log(11);
 console.log(12);
-console.log(16);
-console.log(34);
-console.log(213);
-console.log(88);
-console.log(45);
-console.log(324);
-console.log(965);
