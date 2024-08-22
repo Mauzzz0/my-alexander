@@ -1,7 +1,10 @@
 {
   "name": "my-alexander",
   "version": "1.0.0",
-  "scripts": {},
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node ./src/main.ts"
+  },
   "author": "",
   "license": "ISC",
   "description": "",
