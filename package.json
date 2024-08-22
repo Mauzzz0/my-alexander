@@ -1,0 +1,14 @@
+{
+  "name": "my-alexander",
+  "version": "1.0.0",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dayjs": "^1.11.13"
+  },
+  "devDependencies": {
+    "supertest": "^7.0.0"
+  }
+}
