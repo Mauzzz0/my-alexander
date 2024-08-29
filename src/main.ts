@@ -1,3 +1,4 @@
-const a: number = 1;
+const names: (string | number)[] = ['Один'];
 
-console.log(a);
+names.push('Семь');
+names.push(123);
