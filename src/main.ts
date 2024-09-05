@@ -1,22 +1,21 @@
-import dayjs from 'dayjs';
+type ExampleType2 = (x: string) => void;
+const logInput: ExampleType2 = (input: string) => console.log(input);
+logInput('ajshdakjsd');
 
-const dates = [
-  '2024-08-23T12:30:00Z',
-  '2024-08-23T15:30:00+03:00',
-  '2024-08-23T09:30:00-03:00',
-  '2024-08-24T01:30:00+13:00',
+type ExampleType3 = (a: string, b: number) => void;
 
-  '2024-08-23T15:30:00Z',
-  '2024-08-23T17:30:00+02:00',
-  '2024-08-23T14:30:00-01:00',
-  '2024-08-23T03:30:00-12:00',
+const func3: ExampleType3 = (name: string, age: number) => console.log(name, age);
+func3('ruslan', 10);
 
-  '2024-08-23T14:30:00Z',
-  '2024-08-23T10:30:00-04:00',
-  '2024-08-23T03:30:00-11:00',
-  '2024-08-24T02:30:00+12:00',
-];
+type ExampleType4 = (a: number, b: number) => number;
+const sum: ExampleType4 = (a: number, b: number) => {
+  return a + b;
+};
 
-for (let i = 0; i < dates.length; i++) {
-  console.log(dayjs(dates[i]).toISOString());
-}
+const result = sum(4, 5);
+console.log(result);
+
+const sum3: (arg: number, brg: number, crg: number) => number = (a: number, b: number, c: number) =>
+  a + b + c;
+
+console.log(sum3(1, 2, 3));
